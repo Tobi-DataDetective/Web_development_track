@@ -1,0 +1,2 @@
+Web Development Course By Dr. Angela Yu How the Internet works ISP = Internet Service Provider DNS Server = Domain Name Server How do websites works HTML = gives structure of your websites CSS = styling your site, eg painting JS = allows functionalitjies
+on your websites techcrunch.com
