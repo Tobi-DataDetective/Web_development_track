@@ -1,2 +1,3 @@
 Web Development Course By Dr. Angela Yu How the Internet works ISP = Internet Service Provider DNS Server = Domain Name Server How do websites works HTML = gives structure of your websites CSS = styling your site, eg painting JS = allows functionalitjies
-on your websites techcrunch.com
+on your websites techcrunch.com Introduction to HTML (Hypertext Markup Language) documentation = https://devdocs.io/ MDN web docs site index.html is the convention developers give their home page head: holds information about the page and tells the browser
+how it should handle the page charset='utf-8': all the code is encoded using the utf-8 format meta tags
