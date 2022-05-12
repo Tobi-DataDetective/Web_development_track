@@ -13,3 +13,14 @@ text generator: https://loremipsum.io/
 images: flaticon.com
 Animations: https://giphy.com/
 CSS button generator: https://www.css3buttongenerator.com/
+
+code play ground: codeply.com
+bootstrap: https://getbootstrap.com/
+
+looking at other peoples design patterns: https://www.awwwards.com/websites/clean
+                                        ui-patterns.com
+                                        https://dribbble.com
+
+Wireframing sites: sneakpeekit.com
+                    balsamiq.cloud
+
