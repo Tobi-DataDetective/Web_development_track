@@ -38,6 +38,17 @@ hr {
     margin: 100px auto;
 }
 
+a {
+    color: #11999e;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EAF6F6;
+}
+
 .top-container {
     background-color: #E4F9F5;
     position: relative;
@@ -48,7 +59,10 @@ hr {
     margin: 100px 0;
 }
 
-.bottom-container {}
+.bottom-container {
+    background-color: #66bfbf;
+    padding: 50px 0 20px;
+}
 
 .top-cloud {
     position: absolute;
@@ -119,4 +133,10 @@ hr {
     background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
     background-image: linear-gradient(to bottom, #30E3CB, #2BC4AD);
     text-decoration: none;
+}
+
+.copyright {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0;
 }
