@@ -46,7 +46,8 @@ p {
 
 .iphone-img {
     width: 60%;
-    transform: rotate(25deg);
+    transform: rotate(30deg);
+    /* margin: 0 0 0 10%; */
 }
 
 .navbar {
@@ -84,9 +85,9 @@ p {
 
 #features {
     text-align: center;
-    background-color:#ffff;
+    background-color: #ffff;
     position: relative;
-    z-index:10;
+    z-index: 10;
 }
 
 
@@ -131,4 +132,41 @@ p {
 
 .pricing-column {
     padding: 3% 2%;
+}
+
+#cta {
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 2% 25%;
+}
+
+.cta-text {
+    color: #ffff;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+#footer {
+    text-align: center;
+    padding: 2% 30%;
+    background-color: #ffff;
+}
+
+.footer-img {
+    margin: 5% 3%;
+}
+
+
+/* Repoonsivity */
+
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+        height: auto;
+    }
+    .iphone-img {
+        position: static;
+        transform: rotate(0);
+    }
 }
