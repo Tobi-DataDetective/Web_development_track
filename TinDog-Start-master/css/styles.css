@@ -79,13 +79,14 @@ p {
 #title {
     color: #ffff;
     background-color: #ff4c68;
-    /* height: 530px; */
+    height: 550px;
 }
 
 #features {
     text-align: center;
-    background-color: blue;
+    background-color:#ffff;
     position: relative;
+    z-index:10;
 }
 
 
