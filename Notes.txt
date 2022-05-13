@@ -24,3 +24,5 @@ looking at other peoples design patterns: https://www.awwwards.com/websites/clea
 Wireframing sites: sneakpeekit.com
                     balsamiq.cloud
 
+icons: https://fontawesome.com/
+
