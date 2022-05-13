@@ -58,7 +58,7 @@ p {
 }
 
 .feature-list {
-    padding: 0 40px;
+    /* padding: 0 40px; */
     margin: 50px auto;
 }
 
@@ -84,6 +84,8 @@ p {
 
 #features {
     text-align: center;
+    background-color: blue;
+    position: relative;
 }
 
 
