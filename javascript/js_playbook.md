@@ -155,3 +155,89 @@ function bmiCalculator(weight, height){
 var bmi = bmiCalculator(65,1.8);
 
 console.log(bmi);
+
+
+                Generating Random NUmbers
+
+var n Math.random();
+n = n * 6;   where 6 is the range i.e (0,5.9999)
+n = Math.floor(n) + 1;  instead of generating betwwen 1 and 6 it generates between 0 and 5, so we add 1
+
+Exercise:
+
+prompt("enter male name");
+prompt("enter female name");
+var n = Math.random();
+n = n * 100;
+var score = Math.floor(n)+1;
+console.log(score + "%");
+
+
+                Control Statements: Using if-Else statement
+
+if (track === "clear") {
+        goStraight();
+} else {
+        turnRight();
+}
+
+Exercise:
+
+prompt("enter male name");
+prompt("enter female name");
+var n = Math.random();
+n = n * 100;
+var score = Math.floor(n)+1;
+// console.log(score + "%");
+
+if (score > 70) {
+    alert("Your love score is "+score+ "%. Your love each other");
+} else {
+    alert("Your love score is "+score+ "%");
+}
+
+                Comparators and Equality
+=== is equal to
+!== is not equal to
+> greater than
+< less than
+>= greater than equals
+<= less than or equals
+== checks for equality ignoring the datatypes e.g 1 == "1"
+
+
+                Combining operators
+ && and
+ || or
+ ! not
+
+ if (score > 70) {
+    alert("Your love score is "+score+ "%. Your love each other");
+} 
+if (score >30 && score <= 70) {
+    alert("Your love score is "+score+ "%. Fairly strong");
+} 
+if (score <= 30){
+    alert("Your love score is "+score+"%. Not strong");
+}
+
+
+exercise 
+
+function isLeap(year){
+    if(year % 4 === 0){
+      if (year % 100 === 0){
+          if (year % 400){
+              return "Leap year";
+          } else {
+              return "Not leap year";
+          }
+      }  else {
+          return "Leap year";
+      }
+    } else{
+        return "Not leap year";
+    }
+}
+
+alert(isLeap(2020));
