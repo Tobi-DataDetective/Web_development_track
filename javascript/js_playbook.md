@@ -241,3 +241,143 @@ function isLeap(year){
 }
 
 alert(isLeap(2020));
+
+
+
+
+                Arrays
+
+var guestList = ["Angela","Jack","Pam","James","Lara","Jason"];
+console.log(guestList);
+console.log(guestList.length);
+console.log(guestList[0]);
+console.log(guestList.includes("Jack"));
+
+
+// checking if the imputed name is in the guest list
+var name = prompt("what is your name?");
+
+console.log(guestList.includes(name));
+
+if (guestList.includes(name)) {
+    alert("Welcome");
+}else{
+    alert("Name not on the list");
+}
+
+
+
+                Adding Elements and Intermediate Array Techniques
+name.push adds elements (to the end of list)
+name.pop rmoves the last element
+
+
+Exercise:
+
+function condition(value) {
+    
+    if (value % 3 === 0 && value % 5 === 0) {
+        return "Fizz Buzz";
+    }else if (value % 3 === 0) {
+        return "Fizz";
+    }else if (value % 5 === 0) {
+        return "Buzz";
+    } else {
+        return value;
+    }
+}
+
+// alert(condition(10));
+
+
+var output = [];
+var count = 1;
+function fizzBuzz() {
+
+    
+output.push(condition(count));
+count++;    
+    console.log(output);
+}
+
+
+
+Exercise:
+function whoIsPaying(names){
+    var n = Math.random();
+    n = n * names.length;
+    n = Math.floor(n)+1;
+
+    return names[n];
+}
+
+var guestList = ["Angela","Jack","Pam","James","Lara","Jason"];
+
+alert(whoIsPaying(guestList) +"is going to buy launch today");
+
+
+                While Loops
+var output = [];
+var count = 1;
+function fizzBuzz() {
+
+while (count <= 100) {   
+output.push(condition(count));
+count++;    }
+    console.log(output);
+}
+
+
+                For loops
+for (i=0; i<2; i++) {
+//Do Something
+}
+
+
+var output = [];
+
+function fizzBuzz() {
+
+for (var count = 1; count <= 100; count++) {
+output.push(condition(count));
+    }
+    console.log(output);
+}
+
+
+var output = [];
+
+function fizzBuzz() {
+
+for (var count = 100; count > 1 ; count--) {
+output.push(condition(count));
+    }
+    console.log(output);
+}
+
+
+While checks for a state, it keeps running if a state is true
+For is just iteration, defines how many times you want something to happen
+
+
+
+                Fibonacci Challenge
+
+function fibonacci(n) {
+    var output = [];
+    if (n===1){
+        output = [0];
+    }
+    else if (n === 2) {
+        output = [0,1];
+    }
+    else {
+        output = [0,1];
+
+        for (var i = 2; i < n; i++) {
+            output.push(output[output.length-2] + output[output.length-1]);
+        }
+        
+    }
+    return output;
+}
