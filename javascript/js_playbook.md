@@ -126,4 +126,32 @@ function main() {
 }
 
                 Parameters and Arguments
+function numberOfBottle(amount) {
+    var bottles = Math.floor(amount / 5);
+    var outputMessage = "Purchased "+bottles+" bottles";
+    return outputMessage;
+}
 
+numberOfBottle(19);
+
+
+                Returns and outputs
+function numberOfBottle(amount, costPerBottle) {
+    var remainder = Math.floor(amount % costPerBottle);
+    return remainder;
+}
+
+var change = numberOfBottle(23,10);
+console.log(change);
+
+
+Exercise:
+
+function bmiCalculator(weight, height){
+        var bmi = weight / Math.pow(height,2);
+        return Math.round(bmi);
+}
+
+var bmi = bmiCalculator(65,1.8);
+
+console.log(bmi);
