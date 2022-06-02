@@ -34,10 +34,12 @@ click(), appendChild(), SetAttribute()
 
 
 <!-- SELECTING ELEMENTS JS -->
-----getElementsByTagName()
+----getElementsByTagName()    Produces an array 
 document.getElementsByTagName("li");
 document.getElementsByTagName("li")[2].style.color = "purple";
 document.getElementsByTagName("li").length;
 
-----getElementsByClassName()
+----getElementsByClassName()   Also produces an array
 getElementsByClassName("btn");
+
+---
