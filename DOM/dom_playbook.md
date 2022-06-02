@@ -34,3 +34,10 @@ click(), appendChild(), SetAttribute()
 
 
 <!-- SELECTING ELEMENTS JS -->
+----getElementsByTagName()
+document.getElementsByTagName("li");
+document.getElementsByTagName("li")[2].style.color = "purple";
+document.getElementsByTagName("li").length;
+
+----getElementsByClassName()
+getElementsByClassName("btn");
