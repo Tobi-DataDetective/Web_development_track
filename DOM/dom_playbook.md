@@ -39,7 +39,30 @@ document.getElementsByTagName("li");
 document.getElementsByTagName("li")[2].style.color = "purple";
 document.getElementsByTagName("li").length;
 
-----getElementsByClassName()   Also produces an array
+----getElementsByClassName()   Also produces an array of classes
 getElementsByClassName("btn");
 
----
+---getElementById()  Select only a single item of element
+document.getElementById("title").innerHTML = "Good Bye"
+
+---querySelector()  only returns a single item of either or class or element
+querySelector("h1")
+querySelector("#title")
+querySelector(".btn")
+querySelector("li a") ----you could also combine selectors together
+querySelector("li.item") --- things that occur in the same elements
+querySelector("#list a")
+
+---querySelectorAll does the above but in arrays
+querySelectorAll("#list .item")[2]
+
+
+last 2 selects styles allows for complex HTML selection and manipulation while the others are more broad
+
+Most often you will use just the 2
+
+
+<!-- Manipulation CSS using JS -->
+document.querySelector("li a").style.color="green"
+document.querySelector("li a").style.fontSize="10rem"  in JS the styles are also in camel casing
+
