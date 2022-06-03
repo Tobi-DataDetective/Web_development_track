@@ -89,6 +89,9 @@ document.querySelector("h1").innerHTML = "<em>Good Bye</em>"
 
 <!-- Attribute manipulation -->
 examples of attributes are class, href, src 
+
 document.querySelector("a").attributes;   displays all the attributes associated with the tag a
+
 document.querySelector("a").getAttribute("href");  get the specific attribute from the above provided lists
+
 document.querySelector("a").setAttribute("href", "https://www.bing.com");  manipuation of the attribute by selecting the attribute to be changed and what its to be changed to
