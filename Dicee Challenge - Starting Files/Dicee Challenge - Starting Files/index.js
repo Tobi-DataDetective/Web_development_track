@@ -1,3 +1,5 @@
+// Method 1
+
 // var randomNumber1 = Math.random();
 // randomNumber1 = randomNumber1 * 5;
 // randomNumber1 = Math.floor(randomNumber1) + 1;
@@ -63,8 +65,9 @@
 // // alert("working")
 
 
-// // Method 2
 
+
+// // Method 2
 
 // First Dice
 randomNumber1 = Math.floor(Math.random() * 5) + 1;
@@ -75,11 +78,11 @@ randomNumber2 = Math.floor(Math.random() * 5) + 1;
 imgLink2 = "images/dice" + randomNumber2 + ".png";
 document.querySelector(".img2").setAttribute("src", imgLink2);
 
-
+// Winner
 if (randomNumber1 < randomNumber2) {
-    document.querySelector("h1").innerHTML = "Player2 Wins";
+    document.querySelector("h1").innerHTML = "Player2 Wins🚩";
 } else if (randomNumber1 > randomNumber2) {
-    document.querySelector("h1").innerHTML = "Player1 Wins";
+    document.querySelector("h1").innerHTML = "🚩Player1 Wins";
 } else {
     document.querySelector("h1").innerHTML = "Draw";
 }
