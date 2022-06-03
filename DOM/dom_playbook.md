@@ -64,5 +64,31 @@ Most often you will use just the 2
 
 <!-- Manipulation CSS using JS -->
 document.querySelector("li a").style.color="green"
-document.querySelector("li a").style.fontSize="10rem"  in JS the styles are also in camel casing
+document.querySelector("li a").style.fontSize="10rem"  in JS the styles are also in camel casing also note that the values must be specified as a string
 
+<!-- Seperation of content -->
+HTML - for content
+CSS - for styling
+JS - function/action
+
+document.querySelector("button").classList.add("invisible");  this addes the invisible class to the list of class in the class button and allows for styling in CSS in the style.css file
+
+i.e .invisible { visibility: hidden;}
+
+document.querySelector("button").classList.remove("invisible");
+
+document.querySelector("button").classList.toggle("invisible");
+
+<!-- Text Manipulation -->
+---innerHTML()  gives all the contents and elements inside the html tagg identified
+--textContent() gives only the content inside the html tag
+
+document.querySelector("h1").innerHTML;
+document.querySelector("h1").textContent;
+document.querySelector("h1").innerHTML = "<em>Good Bye</em>"
+
+<!-- Attribute manipulation -->
+examples of attributes are class, href, src 
+document.querySelector("a").attributes;   displays all the attributes associated with the tag a
+document.querySelector("a").getAttribute("href");  get the specific attribute from the above provided lists
+document.querySelector("a").setAttribute("href", "https://www.bing.com");  manipuation of the attribute by selecting the attribute to be changed and what its to be changed to
