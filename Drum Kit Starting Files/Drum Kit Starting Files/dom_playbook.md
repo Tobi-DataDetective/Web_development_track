@@ -95,3 +95,25 @@ document.querySelector("a").attributes;   displays all the attributes associated
 document.querySelector("a").getAttribute("href");  get the specific attribute from the above provided lists
 
 document.querySelector("a").setAttribute("href", "https://www.bing.com");  manipuation of the attribute by selecting the attribute to be changed and what its to be changed to
+
+
+<!-- Advance JS and DOM -->
+$0.addEventListener(input1, input2);
+function repondToClick(){
+    console.log("I got clicked");
+}
+
+
+----debugger -- for debugging
+
+<!-- Higher Order Functions: are functions that can take other functions as inputs. -->
+
+function add(num1, num2){
+    return num1+num2;
+}
+function multiply(num1, num2){
+    return num1*num2;
+}
+function calculator(num1, num2, operator){
+    operator(num1,num2);
+}
