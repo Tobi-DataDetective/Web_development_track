@@ -117,3 +117,20 @@ function multiply(num1, num2){
 function calculator(num1, num2, operator){
     operator(num1,num2);
 }
+
+<!-- Objects -->
+var houseKeeper1 = {
+    yearsOfExperience: 12,
+    name: "Jane",
+    cleaningRepertiore:["bathroom","lobby","bathroom"]
+}
+
+<!-- constructor functions (Note the function naming, this is how we identify constructor functions)-->
+function BellBoy(name, age, hasWorkPermit, languages) {
+    this.name = name;
+    this.age = age;
+    this.hasWorkPermit = hasWorkPermit;
+    this.languages = languages;
+}
+---initialising it will be
+var bellBoy1 = new BellBoy("Timmy","19",true,["French","English"]);
