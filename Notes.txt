@@ -27,3 +27,6 @@ Wireframing sites: sneakpeekit.com
 
 icons: https://fontawesome.com/
 
+incooporating JQuery: https://developers.google.com/speed/libraries/#jquery
+
+

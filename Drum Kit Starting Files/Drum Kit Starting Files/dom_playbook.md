@@ -126,11 +126,43 @@ var houseKeeper1 = {
 }
 
 <!-- constructor functions (Note the function naming, this is how we identify constructor functions)-->
-function BellBoy(name, age, hasWorkPermit, languages) {
+function BellBoy(name, age, hasWorkPermit, languages) = {
     this.name = name;
     this.age = age;
     this.hasWorkPermit = hasWorkPermit;
     this.languages = languages;
 }
+
+
 ---initialising it will be
 var bellBoy1 = new BellBoy("Timmy","19",true,["French","English"]);
+
+<!-- Methods i.e functions inside objects/constructor function  -->
+------implementing on cinstructor function
+function BellBoy(name, age, hasWorkPermit, languages) {
+    this.name = name;
+    this.age = age;
+    this.hasWorkPermit = hasWorkPermit;
+    this.languages = languages;
+    this.moveSuitCase: function(){
+        alert("May i take your suitcase");
+        pickUpSuitCase();
+        move();
+    }
+}
+
+-- intialising
+bellBoy1.moveSuitCase();
+
+----implementing on object
+var houseKeeper1 = {
+    yearsOfExperience: 12,
+    name: "Jane",
+    cleaningRepertiore:["bathroom","lobby","bathroom"]
+    moveSuitCase: function(){
+        alert("May i take your suitcase");
+        pickUpSuitCase();
+        move();
+    }
+
+houseKeeper1.moveSuitCase();
