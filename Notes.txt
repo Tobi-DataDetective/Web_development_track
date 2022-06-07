@@ -29,4 +29,7 @@ icons: https://fontawesome.com/
 
 incooporating JQuery: https://developers.google.com/speed/libraries/#jquery
 
+reducing file size: www.minifier.org
+
+
 
