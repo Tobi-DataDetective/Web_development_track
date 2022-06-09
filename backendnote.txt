@@ -1,0 +1,9 @@
+> npm init
+> npm install express
+> node server.js
+> nodemon server.js
+
+------Creating or automating file path
+app.get("/", function(req, res) {
+    res.sendFile(__dirname + "/index.html");
+});
