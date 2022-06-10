@@ -21,7 +21,7 @@ app.get("/", function(req, res) {
 -Endpoints: https://api.kanye.rest more like a url
 -Paths: https://v2.jokeapi.dev/joke/Any?type=single&contains=debugging
 -Parameter: https://v2.jokeapi.dev/joke/Any?type=single&contains=debugging
--Authentication: https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=a37f7763c738ef9868466660b464c130&units=metric
+-Authentication: https://api.openweathermap.org/data/2.5/weather?q=Paris&appid={API key}&units=metric
 
-API url generator: https://www.postman.com/downloads/
+API url generator: use the app postman or download from link--> https://www.postman.com/downloads/
 
