@@ -76,3 +76,5 @@ app.post("/", function(req, res) {
 app.listen(3000, function() {
     console.log("Running on port 3000");
 });
+
+// Remove all console logs in real projects cos they are not necessary
