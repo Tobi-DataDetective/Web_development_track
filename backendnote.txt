@@ -1,3 +1,10 @@
+node.js repo/Document : nodejs.org/api/
+
+
+working with APIs: postman.com
+
+
+
 > npm init
 > npm install express
 > node server.js
@@ -11,8 +18,10 @@ app.get("/", function(req, res) {
 
 ----API (Application Programming Interface)---------------
 
--Endpoints:  https...../joke/ more like a url
--Paths: https...../joke/Any?contains=debugging&type=single
--Parameter: https...../joke/Any?contains=debugging&type=single
--Authentication: you generate a key
+-Endpoints: https://api.kanye.rest more like a url
+-Paths: https://v2.jokeapi.dev/joke/Any?type=single&contains=debugging
+-Parameter: https://v2.jokeapi.dev/joke/Any?type=single&contains=debugging
+-Authentication: https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=a37f7763c738ef9868466660b464c130&units=metric
+
+API url generator: https://www.postman.com/downloads/
 
