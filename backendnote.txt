@@ -25,3 +25,4 @@ app.get("/", function(req, res) {
 
 API url generator: use the app postman or download from link--> https://www.postman.com/downloads/
 
+know your https status code: develop.mozilla.org..... statusCode
