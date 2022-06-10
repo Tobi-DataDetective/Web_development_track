@@ -31,7 +31,7 @@ app.get("/bmicalc", function(req, res) {
 });
 
 // passing a get to handle the post attribute in the html 
-app.post("/bmicalc", function(req, res) {
+app.post("/bmiCalc", function(req, res) {
 
     var weight = parseFloat(req.body.weight);
     var height = parseFloat(req.body.height);
