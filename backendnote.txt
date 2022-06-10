@@ -7,3 +7,12 @@
 app.get("/", function(req, res) {
     res.sendFile(__dirname + "/index.html");
 });
+
+
+----API (Application Programming Interface)---------------
+
+-Endpoints:  https...../joke/ more like a url
+-Paths: https...../joke/Any?contains=debugging&type=single
+-Parameter: https...../joke/Any?contains=debugging&type=single
+-Authentication: you generate a key
+
