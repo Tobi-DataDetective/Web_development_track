@@ -1,36 +1,71 @@
 const mailchimp = require("@mailchimp/mailchimp_marketing");
-const express = require('express');
-
-const app = express()
-
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
 
 mailchimp.setConfig({
-    apiKey: "7bebce77391ca764ea7cab04a5076be7-us13",
-    server: "us13",
+    apiKey: "YOUR_API_KEY",
+    server: "YOUR_SERVER_PREFIX"
 });
 
-app.get('/audiance', async(req, res, next) => {
-    // get information aboutmembers
-    const response = await mailchimp.ping.getList("5f482e1d0e");
-    console.log(response);
-    res.status(200).json();
-})
+const event = {
+    name: "JS Developers Meetup"
+};
 
+const footerContactInfo = {
+    company: "Mailchimp",
+    address1: "675 Ponce de Leon Ave NE",
+    address2: "Suite 5000",
+    city: "Atlanta",
+    state: "GA",
+    zip: "30308",
+    country: "US"
+};
 
-app.post('/audiance', async(req, res, next) => {
-    // Adding members to the list
-    const { email, status } = req.body;
+const campaignDefaults = {
+    from_name: "Gettin' Together",
+    from_email: "gettintogether@example.com",
+    subject: "JS Developers Meetup",
+    language: "EN_US"
+};
 
-    const response = await mailchimp.lists.addListMember("", {
-        email_address: email,
-        status: status,
+async function run() {
+    const response = await mailchimp.lists.createList({
+        name: event.name,
+        contact: footerContactInfo,
+        permission_reminder: "permission_reminder",
+        email_type_option: true,
+        campaign_defaults: campaignDefaults
     });
-    res.status(200).json(response);
-});
+
+    console.log(
+        `Successfully created an audience. The audience id is ${response.id}.`
+    );
+}
+
+run();
 
 
-app.listen(3000, () => console.log("server is running on 3000"));
 
-// getInformation();
+const listId = "YOUR_LIST_ID";
+const subscribingUser = {
+    firstName: "Prudence",
+    lastName: "McVankab",
+    email: "prudence.mcvankab@example.com"
+};
+
+async function run() {
+    const response = await mailchimp.lists.addListMember(listId, {
+        email_address: subscribingUser.email,
+        status: "subscribed",
+        merge_fields: {
+            FNAME: subscribingUser.firstName,
+            LNAME: subscribingUser.lastName
+        }
+    });
+
+    console.log(
+        `Successfully added contact as an audience member. The contact's id is ${
+      response.id
+    }.`
+    );
+}
+
+run();
